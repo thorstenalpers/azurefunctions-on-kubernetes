@@ -34,17 +34,6 @@ public class Program
 			.ConfigureOpenApi()
 			.ConfigureLogging((context, builder) =>
 			{
-				////var elasticSearchOptions = new ElasticSearchOptions();
-				////context.Configuration.GetSection(ElasticSearchOptions.SECTIONNAME).Bind(elasticSearchOptions);
-				//Log.Logger = new LoggerConfiguration()
-				//	//.WriteTo.Elasticsearch(new ElasticsearchSinkOptions(elasticSearchOptions.FileSinkUri)
-				//	//{
-				//	//	AutoRegisterTemplate = true,
-				//	//	IndexFormat = $"{Assembly.GetExecutingAssembly().GetName().Name.ToLower(CultureInfo.InvariantCulture)}"
-				//	//})
-				//	.CreateLogger();
-
-				//builder.AddSerilog(Log.Logger, dispose: true);
 				builder.AddFilter("Microsoft", LogLevel.Warning);
 			})
 			.ConfigureServices((builder, services) =>

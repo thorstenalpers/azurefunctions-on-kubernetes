@@ -1,0 +1,20 @@
+{
+	"profiles": {
+		"Start": {
+			"commandName": "Project",
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "development"
+			},
+			"hotReloadEnabled": false,
+			"launchBrowser": true,
+			"launchUrl": "api/swagger/ui",
+			"applicationUrl": "http://localhost:7071"
+		},
+		"Docker": {
+			"commandName": "Docker",
+			"launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+			"httpPort": 33636,
+			"useSSL": false
+		}
+	}
+}

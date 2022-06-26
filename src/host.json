@@ -1,0 +1,31 @@
+{
+	"version": "2.0",
+	"healthMonitor": {
+		"enabled": true,
+		"healthCheckInterval": "00:01:00",
+		"healthCheckWindow": "00:02:00",
+		"healthCheckThreshold": 6,
+		"counterThreshold": 0.80
+	},
+	"logging": {
+		"logLevel": {
+			"Default": "Warning",
+			"Microsoft": "Warning",
+			"Host": "Warning",
+			"Function": "Information",
+			"Host.Aggregator": "Warning"
+		},
+		"Console": {
+			"FormatterOptions": {
+				"SingleLine": true,
+				"IncludeScopes": false,
+				"TimestampFormat": "HH:mm:ss ",
+				"UseUtcTimestamp": true,
+				"JsonWriterOptions": {
+					"Indented": true
+				}
+			}
+		}
+	},
+	"functionTimeout": "-1"
+}
